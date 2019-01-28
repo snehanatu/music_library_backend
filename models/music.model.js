@@ -4,6 +4,8 @@ var mongoosePaginate = require('mongoose-paginate')
 var MusicSchema = new mongoose.Schema({
     songName: String,
     singerName: String,
+    albumName: String,
+    trackNumber: String,
     status: String
 })
 
