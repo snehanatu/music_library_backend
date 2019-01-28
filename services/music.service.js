@@ -35,6 +35,8 @@ exports.createMusic = async function(music){
         var newMusic = new Music({
             songName: music.songName,
             singerName: music.singerName,
+            albumName: music.albumName,
+            trackNumber: music.trackNumber,
             status: music.status
         })
         console.log("before save - exports.createMusic" + newMusic);
@@ -78,6 +80,8 @@ exports.createMusic = async function(music){
     
         oldMusic.songName = music.songName
         oldMusic.singerName = music.singerName
+        oldMusic.albumName = music.albumName
+        oldMusic.trackNumber = music.trackNumber
         oldMusic.status = music.status
     
     
