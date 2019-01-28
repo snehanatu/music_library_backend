@@ -42,6 +42,8 @@ exports.getMusics = async function(req, res, next){
         var music = {
             songName: req.body.songName,
             singerName: req.body.singerName,
+            albumName: req.body.albumName,
+            trackNumber: req.body.trackNumber,
             status: req.body.status
         }
         console.log(music);
@@ -79,6 +81,8 @@ exports.getMusics = async function(req, res, next){
             id,
             songName: req.body.songName ? req.body.songName : null,
             singerName: req.body.singerName ? req.body.singerName : null,
+            albumName: req.body.albumName ? req.body.albumName : null,
+            trackNumber: req.body.trackNumber ? req.body.trackNumber : null,
             status: req.body.status ? req.body.status : null
         }
     
